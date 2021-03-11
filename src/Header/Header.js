@@ -1,19 +1,22 @@
 import React from 'react';
-import Nav from './Nav';
 import styled from 'styled-components';
-
-const HeaderNav = styled.header`
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 80px;
-`;
+import Nav from './Nav.js';
 
 function Header() {
+  const HeaderNav = styled.header`
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  `;
+
   return (
-    <HeaderNav>
-      <Nav />
-    </HeaderNav>
+    <>
+      <HeaderNav>
+        <Nav />
+      </HeaderNav>
+    </>
   );
 }
 
